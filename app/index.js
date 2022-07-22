@@ -7,6 +7,7 @@ const getStatementContent = require('./get-statement-content')
 const printer = new PdfPrinter(fonts)
 
 const docDefinition = {
+  pageSize: 'A4',
   content: getStatementContent(statement)
 }
 
