@@ -4,10 +4,11 @@ const getStatementContent = (statement) => {
     statement.businessName,
     ...getAddress(statement.address),
     getTitle(statement.scheme),
-    subHeading,
+    subTitle,
     getBusinessName(statement.businessName),
     getSBI(statement.sbi),
-    ...summaryText
+    ...summaryText,
+    part1Title
   ]
 }
 
@@ -34,9 +35,9 @@ const getTitle = (scheme) => {
   }
 }
 
-const subHeading = {
+const subTitle = {
   text: 'Payment statement',
-  style: 'header2'
+  style: 'subTitle'
 }
 
 const getBusinessName = (businessName) => {
@@ -57,5 +58,10 @@ const summaryText = [
   'Part 2 explains how we calculated the payment.',
   'Part 3 highlights were to go for more information.'
 ]
+
+const part1Title = {
+  text: 'Part 1: Payment summary',
+  style: 'header2'
+}
 
 module.exports = getStatementContent
