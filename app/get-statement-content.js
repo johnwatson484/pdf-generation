@@ -2,7 +2,8 @@ const getStatementContent = (statement) => {
   return [
     rpaLogo,
     statement.businessName,
-    ...getStatementAddress(statement.address)
+    ...getAddress(statement.address),
+    getTitle(statement.scheme)
   ]
 }
 
@@ -11,7 +12,14 @@ const rpaLogo = {
   width: 150
 }
 
-const getStatementAddress = (address) => {
+const getTitle = (scheme) => {
+  return {
+    text: `${scheme.name} ${scheme.year}`,
+    style: 'header'
+  }
+}
+
+const getAddress = (address) => {
   return [
     address.line1,
     address.line2,

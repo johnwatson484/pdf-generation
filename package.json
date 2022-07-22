@@ -2,9 +2,10 @@
   "name": "pdf-generation",
   "version": "1.0.0",
   "description": "POC for PDF Generation in Node.js",
-  "main": "index.js",
+  "main": "app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app/index.js",
+    "start:watch": "nodemon app/index.js"
   },
   "repository": {
     "type": "git",
