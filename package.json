@@ -1,0 +1,22 @@
+{
+  "name": "pdf-generation",
+  "version": "1.0.0",
+  "description": "POC for PDF Generation in Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnwatson484/pdf-generation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnwatson484/pdf-generation/issues"
+  },
+  "homepage": "https://github.com/johnwatson484/pdf-generation#readme",
+  "dependencies": {
+    "pdfmake": "^0.2.5"
+  }
+}
