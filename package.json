@@ -18,5 +18,9 @@
   "homepage": "https://github.com/johnwatson484/pdf-generation#readme",
   "dependencies": {
     "pdfmake": "^0.2.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19",
+    "standard": "^17.0.0"
   }
 }
