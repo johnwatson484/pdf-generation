@@ -14,5 +14,5 @@ const docDefinition = {
 }
 
 const pdfDoc = printer.createPdfKitDocument(docDefinition)
-pdfDoc.pipe(fs.createWriteStream('app/pdfs/basics.pdf'))
+pdfDoc.pipe(fs.createWriteStream('app/pdfs/payment-statement.pdf'))
 pdfDoc.end()
