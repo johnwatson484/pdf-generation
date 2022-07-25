@@ -21,5 +21,53 @@ module.exports = {
     settled: '1 July 2022',
     calculated: '16 June 2022',
     value: '317.15'
+  }],
+  funding: [{
+    name: 'Arable and horticultural soils',
+    level: 'Introductory',
+    area: '5.00',
+    annualValue: '110.00',
+    quarterlyValue: '27.50',
+    quarterlyReduction: '0.00',
+    quarterlyPayment: '27.50',
+    reductions: []
+  }, {
+    name: 'Arable and horticultural soils',
+    level: 'Intermediate',
+    area: '10.00',
+    annualValue: '400.00',
+    quarterlyValue: '100.00',
+    quarterlyReduction: '0.00',
+    quarterlyPayment: '100.00',
+    reductions: []
+  }, {
+    name: 'Improved grassland soils',
+    level: 'Introductory',
+    area: '15.00',
+    annualValue: '420.00',
+    quarterlyValue: '105.00',
+    quarterlyReduction: '50.00',
+    quarterlyPayment: '92.50',
+    reductions: [{
+      reason: 'Land area has changed',
+      value: '50.00'
+    }]
+  }, {
+    name: 'Moorland',
+    level: 'Introductory',
+    area: '12.00',
+    annualValue: '388.60',
+    quarterlyValue: '97.15',
+    quarterlyReduction: '0.00',
+    quarterlyPayment: '97.15',
+    reductions: []
+  }, {
+    name: 'Overall',
+    level: '',
+    area: '42.00',
+    annualValue: '1318.60',
+    quarterlyValue: '329.65',
+    quarterlyReduction: '50.00',
+    quarterlyPayment: '317.15'
   }]
 }

@@ -1,6 +1,6 @@
 const part1 = (statement) => {
   return [
-    part1Title,
+    title,
     getSchedule(statement),
     getPaymentDate(statement.payments),
     getCalculationDate(statement.payments),
@@ -8,7 +8,7 @@ const part1 = (statement) => {
   ]
 }
 
-const part1Title = {
+const title = {
   text: 'Part 1: Payment summary',
   style: 'header2'
 }
