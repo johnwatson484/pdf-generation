@@ -3,13 +3,13 @@ const fs = require('fs')
 const statement = require('./mock-statement-data')
 const fonts = require('./fonts')
 const styles = require('./styles')
-const getStatementContent = require('./get-statement-content')
+const generateContent = require('./generate-content')
 
 const printer = new PdfPrinter(fonts)
 
 const docDefinition = {
   pageSize: 'A4',
-  content: getStatementContent(statement),
+  content: generateContent(statement),
   styles
 }
 

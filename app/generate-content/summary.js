@@ -1,4 +1,4 @@
-const getStatementContent = (statement) => {
+const summary = (statement) => {
   return [
     rpaLogo,
     statement.businessName,
@@ -7,8 +7,7 @@ const getStatementContent = (statement) => {
     subTitle,
     getBusinessName(statement.businessName),
     getSBI(statement.sbi),
-    ...summaryText,
-    part1Title
+    ...summaryText
   ]
 }
 
@@ -59,9 +58,4 @@ const summaryText = [
   'Part 3 highlights were to go for more information.'
 ]
 
-const part1Title = {
-  text: 'Part 1: Payment summary',
-  style: 'header2'
-}
-
-module.exports = getStatementContent
+module.exports = summary
